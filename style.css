@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "Doto";
+    src: url("Doto_Rounded-ExtraBold.ttf");
+}
+
+body {
+    margin: 0;
+    background-image: url("Background.png");
+}
+
+.page {
+    padding: 8px 24px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 16px;
+    font-family: "Doto";
+    color: white;
+    font-weight: 1000;
+    letter-spacing: 2px;
+}
+
+#nav {
+    background-color: #151617;
+    padding: 4px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #151617;
+    border-radius: 8px;
+}
+
+.nav-button {
+    background-color: #151617;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+#profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+#sign-in-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #6C63FF;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    padding: 8px 12px;
+    gap: 12px;
+}
+.sign-in {
+    color: white;
+    font-size: 13px;
+}
