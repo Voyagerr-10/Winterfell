@@ -7,6 +7,11 @@
     src: url("SansSerifCollection.ttf");
 }
 
+@font-face {
+    font-family: "Roboto Mono";
+    src: url("RobotoMono.ttf");
+}
+
 body {
     margin: 0;
     background-image: url("Background.png");
@@ -80,4 +85,81 @@ body {
 .sign-in {
     color: white;
     font-size: 13px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+}
+
+h1 {
+    font-family: "Sans Serif";
+    font-size: 60px;
+    line-height: 1.3;
+    background: linear-gradient(to bottom, #e3e3e3 45%, #555555 95%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+#line {
+    font-family: "Roboto Mono";
+    font-weight: 350;
+    color: #aaaaaa;
+}
+
+.months {
+    color: #FFFFFF;
+    position: relative;
+}
+
+.months::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    right: 7px;
+    top: -1px;
+    bottom: -1px;
+    background: #6a3fe0;
+    transform: rotate(-8deg);
+    z-index: -1;
+}
+
+.minutes {
+    position: relative;
+}
+
+.minutes::before {
+    content: "";
+    position: absolute;
+    left: -4px;
+    right: 2px;
+    bottom: -6px;
+    height: 1.8px;
+    background: #ecc501;
+    transform: rotate(-3deg);
+    border-radius: 5px;
+}
+
+.minutes::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    right: -4px;
+    bottom: -7px;
+    height: 1.8px;
+    background: #ecc501;
+    transform: rotate(4deg);
+    border-radius: 5px;
 }
